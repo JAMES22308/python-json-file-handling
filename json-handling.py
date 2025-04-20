@@ -353,7 +353,7 @@ def signup(demo3):
                         speech('congratulations, your account was the first account has been created')
                         return 'congratulations! first account has been created'
                     else:
-                        speech('new account has been made')
+                        speech('great!, new account has been made')
                         return 'new account has been created'
                     
                 else:
