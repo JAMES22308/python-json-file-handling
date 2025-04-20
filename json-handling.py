@@ -384,9 +384,6 @@ def signin(demo3):
             return True
 
 
-    
-    
-
 def speech(prompt):
     jarvis = pyttsx3.init()
     jarvis.setProperty('rate', 170)
