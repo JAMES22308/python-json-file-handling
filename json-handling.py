@@ -392,9 +392,9 @@ def speech(prompt):
 
 
 def main():
-    demo = "json-handling.json"
-    demo2 = "json-handling2.json"
-    demo3 = "json-handling3.json"
+    demo = "database/json-handling.json"
+    demo2 = "database/json-handling2.json"
+    demo3 = "database/json-handling3.json"
 
     backup_file = {
         "1": "display content",
@@ -417,7 +417,7 @@ def main():
         "2": "sign in",
         "3": "exit",
     }
-
+    print('AI is talking....')
     speech("hello, i am friday, and this is authentication, press 1, to sign up, press 2, to sign in, and press 3, to exit")
     
     while True:
@@ -465,9 +465,6 @@ def main():
             return False
         else:
             speech('wrong key') 
-
-       
-
     
 main()
 
