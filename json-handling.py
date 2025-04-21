@@ -419,6 +419,8 @@ def main():
     }
     print('AI is talking....')
     speech("hello, i am friday, and this is authentication, press 1, to sign up, press 2, to sign in, and press 3, to exit")
+    print('AI is talking....')
+    speech("hello, i am friday, and this is authentication, press 1, to sign up, press 2, to sign in, and press 3, to exit")
     
     while True:
         print("-----------authentication-----------")
