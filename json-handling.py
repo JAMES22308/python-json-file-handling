@@ -127,16 +127,19 @@ def edit(demo):
     for person in content:
         if id == person["id"]:
             edit = edit_data()
-            person["name"] = edit["name"]
-            person["age"] = edit["age"]
-            person["number"] = edit["number"]
-            found = True
+            if edit["name"] != person["name"] or edit["age"] != person["age"] or edit["number"] != person["number"]:
+                person["name"] = edit["name"]
+                person["age"] = edit["age"]
+                person["number"] = edit["number"]
+                found = True
+            
     if found:
         with open(demo, 'w') as file:
             json.dump(content, file, indent=4)     
-        return 'updated successfully'
+        return f"{print('updated successfully')} \n {speech('updated successfully')}"
     else:
-        return 'editing failed'
+        
+        return f"{print('no actual changes made')} \n {speech('no actual changes made')}"
 
 def display(demo):
 
@@ -403,33 +406,23 @@ def main():
     }
 
     options = {
-        "a": "add",
-        "d": "display",
-        "r": "remove",
-        "e": "edit",
-        "b": "backup",
-        "x": "exit"
+        "a": "add ➕",
+        "d": "display 📄",
+        "r": "remove ␡ ",
+        "e": "edit ✂️",
+        "b": "backup 📀",
+        "x": "exit 🚪"
 
     }
     
     auth = {
-        "1": "sign up",
-        "2": "sign in",
-        "3": "exit",
+        "1": "sign up 🆙",
+        "2": "sign in ✍️",
+        "3": "exit 🚪",
     }
-    print('AI is talking....')
-    speech("hello, i am friday, and this is authentication, press 1, to sign up, press 2, to sign in, and press 3, to exit")
-    print('test 1')
-
-    print('hello world 1')
-
-    print("this is the final output")
-
-    print("requesting pull request")
-
-    print("requesting second pull request")
-
-    print(1000 + 1000)
+    # print('AI is talking....')
+    # speech("hello, i am friday, and this is authentication, press 1, to sign up, press 2, to sign in, and press 3, to exit")
+    
 
 
     
@@ -444,7 +437,7 @@ def main():
             print("sign in page")
             account = signin(demo3)
             if account:
-                speech('credentials accepted successfully, welcome to contact information, choose an option below, thanks')
+                speech('welcome to contact information')
                 while True:
                     print('-----------contact info-----------')
                     cat(options)
@@ -459,8 +452,8 @@ def main():
                         speech('remove person entry')
                         print(remove(demo))
                     elif ask == 'e':
-                        speech('add person entry')
-                        print(edit(demo))
+                        speech('edit person entry')
+                        edit(demo)
                     elif ask == 'b':
                         speech('backup person entry')
                         print(backup(demo, demo2, backup_file)) 
