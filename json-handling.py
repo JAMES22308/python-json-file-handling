@@ -427,6 +427,9 @@ def main():
 
     print("requesting pull request")
 
+    print("requesting second pull request")
+
+
     
     while True:
         print("-----------authentication-----------")
