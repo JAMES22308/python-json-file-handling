@@ -471,6 +471,8 @@ def main():
                     elif ask == 'x':
                         print("exit")
                         return False
+                    elif ask == 'f':
+                        print('i miss you baby')
             elif account == False:
                 print('no user account in the database yet')
             else:
