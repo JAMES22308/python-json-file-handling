@@ -473,6 +473,9 @@ def main():
                         return False
                     elif ask == 'f':
                         print('i miss you baby')
+                    elif ask == 'ange':
+                        print('congratulations')
+
             elif account == False:
                 print('no user account in the database yet')
             else:
