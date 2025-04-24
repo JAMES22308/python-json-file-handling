@@ -1,3 +1,4 @@
+print("-----------CAR GAME-----------")
 running = False
 while True:
     option = input('press 1 to start | press 2 to stop: ')
