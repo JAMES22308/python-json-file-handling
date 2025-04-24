@@ -1,7 +1,7 @@
 print("-----------CAR GAME-----------")
 running = False
 while True:
-    option = input('press 1 to start | press 2 to stop: ')
+    option = input('press 1 to start | press 2 to stop | press 3 to exit: ')
     if option == '1':
         if running:
             print('engine is already running')
