@@ -1,22 +1,22 @@
 print("-----------CAR GAME-----------")
 running = False
 while True:
-    option = input('press 1 to start | press 2 to stop | press 3 to exit: ')
-    if option == '1':
+    option = input('type start to start | type stop to stop | type exit to exit: ')
+    if option == 'start':
         if running:
             print('engine is already running')
         else:
             print('engine started')
             running = True
-    elif option == '2':
+    elif option == 'stop':
         if not running:
             print("engine is already stopped")
         else:
             print('engine is stopped')
             running = False
-    elif option == '3':
+    elif option == 'exit':
         print('-----------GAME OVER-----------')
-        break
+
     else:
         print('try again')
         
