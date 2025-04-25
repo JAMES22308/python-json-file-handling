@@ -18,7 +18,7 @@ def car_game():
                 print('engine is stopped')
                 running = False
         elif option == '3':
-            print('-----------GAME OVER-----------')
+            print('-----------GAME OVER!-----------')
             break
         else:
             print('try again')
