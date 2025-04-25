@@ -19,4 +19,11 @@ while True:
         break
     else:
         print('try again')
+        print('try again')
+        print('try again')
+        print('try again')
+        print('try again')
+        print('try again')
+        print('try again')
+        print('try again')
 
