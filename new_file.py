@@ -1,4 +1,5 @@
 print("-----------CAR GAME-----------")
+print('ai is talking')
 running = False
 while True:
     option = input('type start to start | type stop to stop | type exit to exit: ')
