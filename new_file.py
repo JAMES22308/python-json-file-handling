@@ -15,15 +15,9 @@ while True:
             print('engine is stopped')
             running = False
     elif option == '3':
-        print('bye')
+        print('-----------GAME OVER-----------')
         break
     else:
         print('try again')
-        print('try again')
-        print('try again')
-        print('try again')
-        print('try again')
-        print('try again')
-        print('try again')
-        print('try again')
+        
 
