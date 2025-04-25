@@ -1,6 +1,7 @@
 
 def car_game():
     print("-----------CAR GAME-----------")
+    print('ai is talking...')
     running = False
     while True:
         option = input('press 1 to start | press 2 to stop | press 3 to exit: ')
@@ -17,7 +18,7 @@ def car_game():
                 print('engine is stopped')
                 running = False
         elif option == '3':
-            print('-----------GAME OVER-----------')
+            print('-----------GAME OVER!-----------')
             break
         else:
             print('try again')
